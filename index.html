@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="stylesheet/style.css">
+        <script src="script.js"></script>
+        <title>Lista de Tarefas</title>
+    </head>
+<body>
+    <nav class="nav-bar">
+        <div class="menu">
+            <h1>Lista de Tarefas</h1>
+            <img src="./stylesheet/perfil.png">
+            <p>Realizar é muito mais divertido do que procrastinar.<br>
+               O seu espetáculo, e cada tarefa concluída é um ato de sucesso.<br>
+               Então, bora colocar um pouco mais de humor nesse roteiro e fazer do seu dia uma comédia de conquistas!</p>
+            
+            <div class="nav-list">
+                <ul>
+                    <li class="nav-item"><a href="#" class="nav-link">Lista de Tarefas</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Tarefas realizadas</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Agenda</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Configurações</a></li>
+                </ul>
+            </div>  
+        </div>
+    </nav>
+
+    <h1>Adicionar Tarefa</h1>
+    <div class="content">
+        <div class="content--add-item">
+            <input type="text" id="novaTarefa" placeholder="Digite sua nova tarefa">
+            <button onclick="novaTarefa()" id="btn-new-task" title="Clique aqui para adicionar uma nova tarefa.">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-lg" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M8 2a.5.5 0 0 1 .5.5v5h5a.5.5 0 0 1 0 1h-5v5a.5.5 0 0 1-1 0v-5h-5a.5.5 0 0 1 0-1h5v-5A.5.5 0 0 1 8 2Z"/>
+                </svg>
+            </button>
+        </div>
+        <div class="content--body">
+            <div class="tarefas-container">
+                <div class="tabela-tarefas">
+                    <h2>Dia</h2>
+                    <ol id="to-do-list"></ol>
+                </div>
+                <div class="tabela-tarefas">
+                    <h2>Noite</h2>
+                    <ol id="to-do-list"></ol>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,172 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: black;
+}
+
+.nav-bar {
+    background-color: white;
+    color: black;
+    padding: 15px;
+    display: flex;
+}
+
+.menu {
+    display: flex;
+    
+}
+
+.menu h1 {
+    margin-right: 20px;
+}
+
+.menu img {
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.menu p {
+    margin: 0;
+    font-size: 14px;
+}
+
+.nav-list ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.nav-list li {
+    margin-right: 20px;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+}
+
+.content {
+    max-width: 800px;
+    margin: 20px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px white;
+}
+
+.content--add-item {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.content--add-item input {
+    flex-grow: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+.content--add-item button {
+    background-color: grey;
+    color: black;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.content--add-item button:hover {
+    background-color: grey;
+}
+
+.tarefas-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.tabela-tarefas {
+    flex-grow: 1;
+    padding: 0 10px;
+}
+
+.tabela-tarefas h2 {
+    color: black;
+    margin-bottom: 10px;
+}
+
+.tabela-tarefas ol {
+    list-style: none;
+    padding: 0;
+}
+
+.tabela-tarefas li {
+    background-color: black;
+    padding: 10px;
+    margin-bottom: 5px;
+    border-radius: 4px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.tabela-tarefas button {
+    background-color: #ff4d4d;
+    color: black;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.tabela-tarefas button:hover {
+    background-color: #ff3333;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f0f0f0;
+    padding: 20px;
+}
+
+.menu {
+    text-align: center;
+}
+
+.menu h1 {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.nav-list ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-list li {
+    margin-bottom: 10px;
+}
+
+.content {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+}
+
+@media screen and (max-width: 768px){
+    *{
+        width:100%;
+        flex-direction: column;
+    }
+  }
